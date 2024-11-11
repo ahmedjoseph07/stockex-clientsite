@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "react-toastify/dist/ReactToastify.css"
 
 // Routes Imported
 import HomePage from "./landing_page/home/HomePage";
@@ -19,7 +20,7 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage/>} />
-          <Route path="/signup" element={<Signup/>} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="/about" element={<AboutPage/>} />
           <Route path="/products" element={<ProductPage/>} />
           <Route path="/pricing" element={<PricingPage/>} />

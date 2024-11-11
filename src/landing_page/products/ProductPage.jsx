@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from '../products/Hero'
 import LeftImage from '../products/LeftImage'
 import RightImage from '../products/RightImage'
-import OpenAccount from '../OpenAccount'
+// import OpenAccount from '../OpenAccount'
 const ProductPage = () => {
   return (
     <>
@@ -17,7 +17,7 @@ const ProductPage = () => {
 
     <LeftImage imageUrl="images/varsity.png" productName="Varsity mobile" productDescription="Our ultra-fast flagship trading platform with streaming market data, advanced charts, an elegant UI, and more. Enjoy the Kite experience seamlessly on your Android and iOS devices." tryDemo="Varsity" learnMore ="Learn More" googlePlay="" appStore="" />
     <p className='hidden md:flex md:justify-center md:items-start text-2xl font-semibold lg:-mb-5 -mb:4'>Know more about our technology stack? Check out the&nbsp;<span className='text-green-500'>StockEx</span>&nbsp;Blog..</p>
-    <OpenAccount/>
+    {/* <OpenAccount/> */}
     </>
   )
 }
