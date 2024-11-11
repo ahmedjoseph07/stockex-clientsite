@@ -21,7 +21,7 @@ const Navbar = () => {
         navigate("/login");
       } else {
         const { data } = await axios.post(
-          "https://stockex-clientsite.vercel.app",
+          "https://stockex-backend.onrender.com",
           {},
           { withCredentials: true }
         );
@@ -78,7 +78,7 @@ const Navbar = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/login",
+        "https://stockex-backend.onrender.com/login",
         {
           ...inputValue,
         },
@@ -123,7 +123,7 @@ const Navbar = () => {
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             { isLoggedIn ? (
-                <Link to="http://localhost:5174/dashboard">Dashboard</Link>
+                <Link to="http://stockex-dashboard.vercel.app">Dashboard</Link>
             ) : (
                 <span>Dashboard (Login Required)</span>
             )}

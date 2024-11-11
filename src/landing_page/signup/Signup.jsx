@@ -34,7 +34,7 @@ const Signup = () => {
         e.preventDefault();
         try {
             const { data } = await axios.post(
-                "https://stockex-clientsite.vercel.app",
+                "https://stockex-backend.onrender.com/signup",
                 {
                     ...inputValue,
                 },
