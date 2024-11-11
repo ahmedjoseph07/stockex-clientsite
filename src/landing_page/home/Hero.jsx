@@ -1,5 +1,5 @@
 import React from 'react'
-import TypingComponent from '../Typed'
+import TypingComponent from '../Typed.jsx'
 const Hero = () => {
   return (
     <div>
