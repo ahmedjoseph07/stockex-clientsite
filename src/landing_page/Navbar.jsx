@@ -21,7 +21,7 @@ const Navbar = () => {
         navigate("/login");
       } else {
         const { data } = await axios.post(
-          "http://localhost:4000",
+          "https://stockex-clientsite.vercel.app",
           {},
           { withCredentials: true }
         );
