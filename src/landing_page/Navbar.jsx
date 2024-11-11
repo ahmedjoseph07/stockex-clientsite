@@ -16,7 +16,7 @@ const Navbar = () => {
     const verifyCookie = async () => {
       if (!cookies.token) {
         setIsLoggedIn(false);  // If no token, the user is logged out
-        navigate("/login");
+        navigate("/");
       } else {
         const { data } = await axios.post(
           "https://stockex-backend.onrender.com",
